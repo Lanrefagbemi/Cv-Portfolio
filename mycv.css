@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 10px 20px;
+}
+header {
+    line-height: 1.5;
+    background-color:rgba(0,0,0,0.3);
+    margin: 0;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.name {
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+}
+.surname {
+    color: #efefef;
+}
+#h2 {
+    text-align: center;
+    font-size: 30px;
+}
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.objective {
+    text-align: center;
+}
+.personal-details {
+    line-height: 1.5; 
+}
+.data {
+    font-weight: bold;
+    display: inline-block;
+    width: 90%;
+}
+
+.details1 {
+    display: inline-block;
+    width: 10%;
+    text-align: right;
+}
+.details2 {
+    display: inline-block;
+    width: 10%;
+    text-align: right;
+}
+
+.qualifications {
+    line-height: 1.5;
+}
+.experience {
+    line-height: 1.5;
+}
+.inline{
+    font-weight: bold;
+}
+.experience ul {
+    margin-left: 20px;
+}
+.referee {
+    line-height: 1.5;
+}
+@media screen and (max-width:800px) {
+    .data {
+        width: 100%;
+        text-align: center;
+    }
+    .data::after{
+        content:":";
+    }
+    .details1,.details2 {
+        width: 100%;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    section.experience,section.referee {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    section.experience ul li .details::before {
+        content: ":";
+    }
+}
